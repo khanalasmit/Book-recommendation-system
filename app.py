@@ -1,10 +1,10 @@
 from flask import Flask,render_template,request
 import pickle
 import numpy as np
-popular_df=pickle.load(open('C:\\Users\\Acer\\OneDrive\\Documents\\projects\\BookRecommendationSystem\\popular.pkl','rb'))
-pt=pickle.load(open('C:\\Users\\Acer\\OneDrive\\Documents\\projects\\BookRecommendationSystem\\pt.pkl','rb'))
-sim_matrix=pickle.load(open('C:\\Users\\Acer\\OneDrive\\Documents\\projects\\BookRecommendationSystem\\similarity.pkl','rb'))
-Books=pickle.load(open('C:\\Users\\Acer\\OneDrive\\Documents\\projects\\BookRecommendationSystem\\books.pkl','rb'))
+popular_df=pickle.load(open('popular.pkl','rb'))
+pt=pickle.load(open('pt.pkl','rb'))
+sim_matrix=pickle.load(open('similarity.pkl','rb'))
+Books=pickle.load(open('books.pkl','rb'))
 app = Flask(__name__)
 
 @app.route("/")
